@@ -1,0 +1,85 @@
+
+.subMenu {
+	height: 50px;
+	z-index: 1000;
+	width: 100%;
+	background: #0977bc;
+}
+
+.subMenu .inner {
+	padding:0;
+	font-weight: 400;
+	margin: 0 auto;
+}
+
+
+.subNavBtn {
+	display: block;
+	height: 35px;
+	width: 10%;
+	float: left;
+	margin: 0px 0px 0 0;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 15px 2% 0 2%;
+	text-align: center;
+
+	color: #fff;
+}
+.subMenu a:hover {
+	background: #1783c7;
+}
+
+.active {
+	background: #25aae1;
+}
+.end {
+	margin: 0;
+}
+
+
+
+
+/* SECTIONS */
+.sTop {
+	min-height: 130px;
+	background:#fff;
+	color:#3d3d3d;
+	padding: 50px 0;
+	height: 300px;
+
+}
+
+.s1 {
+	background:#184764;
+	color:#fff;
+
+}
+
+
+.s2 {
+	background: #313131;
+}
+.s2 a {
+	color: #fff;
+}
+
+.s3 {
+	background: #1b83b3;
+}
+
+
+.s4 {
+	background: #5aa3c4;
+}
+
+
+
+.s5 {
+	background: #bce1f1;
+	color: #3d3d3d;
+}
+
+.s6 {
+	background: #161616;
+}
