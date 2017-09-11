@@ -9,7 +9,8 @@
   outline: 0;
 }
 
-@mixin animal($url) {
+
+@mixin animal($url, $url-min) {
   background-image: url($url);
   background-position: center;
   background-size: cover;
@@ -24,6 +25,19 @@
   p{
     margin: 0 10vw;
   }
+  @media(max-width: 800px){
+    flex-direction: column;
+    justify-content: center;
+    background-position: fixed;
+    //background-image: url($url-min);
+
+    p.title{
+      margin: 0 10px 70px 10px;
+    }
+    p{
+      text-align: center;
+    }
+  }
 }
 
 section{
@@ -37,9 +51,10 @@ section{
 }
 
 .subMenu {
+  box-sizing: border-box;
 	height: 50px;
 	z-index: 1000;
-	width: 100%;
+	width: 100vw;
 	background: black;
   opacity: 0.7;
   position: fixed;
@@ -61,6 +76,7 @@ a{
 }
 
 
+
 @keyframes append {
   0% {opacity: 0;}
   100% {opacity: 1;}
@@ -70,6 +86,13 @@ p{
   animation-name: append;
   animation-duration: 3s;
   line-height: 1.5rem;
+  @media(max-width: 1200px){
+    font-size: 0.9rem;
+    line-height: 1rem;
+    &.title{
+      font-size: 2rem;
+    }
+  }
   &.title{
     font-size: 3rem;
   }
@@ -79,12 +102,20 @@ p{
   background-image: url('../images/forest.jpeg');
   background-position: center;
   background-size: cover;
-
+  @media(max-width: 800px){
+    background-size: auto;
+  }
   p.title{
     margin: 0 20vw 70px 20vw;
+    @media(max-width: 1200px){
+      margin: 0 10px 70px 10px;
+    }
   }
   p{
     margin: 0 30vw;
+    @media(max-width: 900px){
+      margin: 0 10px;
+    }
   }
 }
 
@@ -96,6 +127,9 @@ p{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @media(max-width: 800px){
+    background-size: auto;
+  }
   .title{
     margin: 0 20vw 70px 20vw;
   }
@@ -107,25 +141,29 @@ p{
 }
 
 #wolf{
-  @include animal('../images/wolf.jpeg');
+  @include animal('../images/wolf.jpeg', '../images/wolf-min.jpeg');
 }
 
 #moose{
-  @include animal('../images/moose.jpeg');
+  @include animal('../images/moose.jpeg', '../images/moose-min.jpeg');
 }
 
 #otter{
-  @include animal('../images/otter.jpeg');
+  @include animal('../images/otter.jpeg', '../images/otter-min.jpeg');
 }
 
 #beaver{
-  @include animal('../images/beaver.jpg');
+  @include animal('../images/beaver.jpg', '../images/beaver-min.jpg');
 }
 
 #raccoon{
-  @include animal('../images/raccoon.jpeg');
+  @include animal('../images/raccoon.jpeg', '../images/raccoon-min.jpeg');
 }
 
 #lynx{
-  @include animal('../images/lynx.jpeg');
+  @include animal('../images/lynx.jpeg', '../images/lynx-min.jpeg');
+}
+
+div{
+  width: 100vw;
 }
