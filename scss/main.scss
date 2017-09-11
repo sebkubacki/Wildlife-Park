@@ -29,7 +29,6 @@
     flex-direction: column;
     justify-content: center;
     background-position: fixed;
-    //background-image: url($url-min);
 
     p.title{
       margin: 0 10px 70px 10px;
@@ -110,11 +109,18 @@ p{
     @media(max-width: 1200px){
       margin: 0 10px 70px 10px;
     }
+    @media(max-width: 750px){
+      font-size: 2rem;
+    }
+    @media(max-width: 510px){
+      font-size: 1.5rem;
+    }
   }
   p{
     margin: 0 30vw;
     @media(max-width: 900px){
       margin: 0 10px;
+      line-height: 1.3rem;
     }
   }
 }
@@ -137,6 +143,9 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    @media(max-width: 800px){
+      flex-wrap: wrap;
+    }
   }
 }
 
