@@ -2,111 +2,201 @@
 <html lang="pl-PL">
 <head>
     <meta charset="UTF-8">
-    <title>Sass - Zadania</title>
+    <title>Canadian Wildlife Park</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/css/main.css" rel="stylesheet">
     <script src="jquery.min.js"></script>
     <script src="jquery.smint.js"></script>
-    <script src="js/app.js"></script>
+
 </head>
 <body>
   <div class="subMenu">
-    <a href="#home">Home</a>
+    <a href="#home"  class="choose-home">Home</a>
     <div>
-    <a href="#ouranimals">Animals</a>
+    <a href="#ouranimals"  class="choose-animals">Animals</a>
+    <a href="#ourplants"  class="choose-plants">Plants</a>
     <a>Contact</a>
     </div>
   </div>
   <div class="home">
   <section id="main">
-    <p class="title">Welcome to Canadian Wildlife Park!</p>
+    <p class="title">Welcome to Canadian Wildlife Park</p>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis bibendum erat. Ut iaculis vel metus in pulvinar. Phasellus consectetur nec felis eget placerat. Proin id rutrum mi, eu euismod magna. Nunc placerat malesuada enim sit amet molestie. Nulla cursus est convallis, condimentum odio fermentum, posuere sapien. Phasellus condimentum volutpat odio sit amet faucibus. Aliquam ut risus laoreet, auctor nunc id, facilisis sapien. Nunc euismod turpis eget facilisis lacinia.
-
-      Aliquam erat volutpat. Quisque eget augue vel odio lobortis iaculis vitae at lacus. Morbi tristique eleifend congue. Mauris nulla elit, imperdiet sed tellus ac, consequat scelerisque leo. Cras accumsan lorem sed mollis pulvinar. Fusce commodo justo tristique mattis interdum. Ut eu tortor sem. Phasellus ac tempus tortor. Morbi pharetra nunc vitae interdum elementum. Aliquam luctus pharetra neque eget sagittis. Suspendisse eu diam aliquam dui sodales efficitur.
     </p>
   </section>
   </div>
-  <div class="ouranimals">
-  <section id="animals">
-      <p class="title">
-        Our animals:
-      </p>
-      <div>
-      <a href="#wolves" class="intLink">Wolves</a>
-      <a href="#mooses" class="intLink">Mooses</a>
-      <a href="#otters" class="intLink">Otters</a>
-      <a href="#beavers" class="intLink">Beavers</a>
-      <a href="#raccoons" class="intLink">Raccoons</a>
-      <a href="#lynxs" class='intLink'>Lynx</a>
-      <a></a>
-      </div>
-  </section>
-  </div>
-  <div class="wolves">
-    <section id="wolf">
-      <p class="title">
-        Wolf
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec aliquam odio. Nullam lobortis sit amet eros vel pretium. Vestibulum malesuada feugiat quam, vel dapibus nisl dictum in. Nullam sollicitudin tincidunt justo, venenatis semper nisi molestie at. Suspendisse purus erat, ullamcorper non tortor id, pretium ornare diam. Maecenas varius, odio nec maximus aliquam, diam metus molestie sem, sed pulvinar odio libero non felis. Donec non hendrerit diam. Sed sed enim quis neque gravida feugiat vel nec sem. Sed efficitur lacus at elementum tincidunt. Ut id leo vulputate, tristique tortor sit amet, maximus ex. Maecenas molestie ac urna in rutrum.
-      </p>
+  <div id="animals-content" class="hidden">
+    <div class="ouranimals">
+    <section id="menu">
+        <p class="title">
+          Our animals:
+        </p>
+        <div>
+        <a href="#wolves" class="intLink">Wolf</a>
+        <a href="#mooses" class="intLink">Moose</a>
+        <a href="#otters" class="intLink">Otter</a>
+        <a href="#beavers" class="intLink">Beaver</a>
+        <a href="#raccoons" class="intLink">Raccoon</a>
+        <a href="#lynxs" class='intLink'>Lynx</a>
+        <a></a>
+        </div>
     </section>
+    </div>
+    <div class="wolves">
+      <section id="wolf">
+        <p class="title">
+          Wolf
+        </p>
+        <p class="desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec aliquam odio. Nullam lobortis sit amet eros vel pretium. Vestibulum malesuada feugiat quam, vel dapibus nisl dictum in. Nullam sollicitudin tincidunt justo, venenatis semper nisi molestie at. Suspendisse purus erat, ullamcorper non tortor id, pretium ornare diam. Maecenas varius, odio nec maximus aliquam, diam metus molestie sem, sed pulvinar odio libero non felis. Donec non hendrerit diam. Sed sed enim quis neque gravida feugiat vel nec sem. Sed efficitur lacus at elementum tincidunt. Ut id leo vulputate, tristique tortor sit amet, maximus ex. Maecenas molestie ac urna in rutrum.
+        </p>
+      </section>
+    </div>
+
+    <div class="mooses">
+      <section id="moose">
+        <p class="title">
+          Moose
+        </p>
+        <p class="desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec aliquam odio. Nullam lobortis sit amet eros vel pretium. Vestibulum malesuada feugiat quam, vel dapibus nisl dictum in. Nullam sollicitudin tincidunt justo, venenatis semper nisi molestie at. Suspendisse purus erat, ullamcorper non tortor id, pretium ornare diam. Maecenas varius, odio nec maximus aliquam, diam metus molestie sem, sed pulvinar odio libero non felis. Donec non hendrerit diam. Sed sed enim quis neque gravida feugiat vel nec sem. Sed efficitur lacus at elementum tincidunt. Ut id leo vulputate, tristique tortor sit amet, maximus ex. Maecenas molestie ac urna in rutrum.
+        </p>
+      </section>
+    </div>
+
+    <div class="otters">
+      <section id="otter">
+        <p class="title">
+          Otter
+        </p>
+        <p class="desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec aliquam odio. Nullam lobortis sit amet eros vel pretium. Vestibulum malesuada feugiat quam, vel dapibus nisl dictum in. Nullam sollicitudin tincidunt justo, venenatis semper nisi molestie at. Suspendisse purus erat, ullamcorper non tortor id, pretium ornare diam. Maecenas varius, odio nec maximus aliquam, diam metus molestie sem, sed pulvinar odio libero non felis. Donec non hendrerit diam. Sed sed enim quis neque gravida feugiat vel nec sem. Sed efficitur lacus at elementum tincidunt. Ut id leo vulputate, tristique tortor sit amet, maximus ex. Maecenas molestie ac urna in rutrum.
+        </p>
+      </section>
+    </div>
+
+    <div class="beavers">
+      <section id="beaver">
+        <p class="title">
+          Beaver
+        </p>
+        <p class="desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec aliquam odio. Nullam lobortis sit amet eros vel pretium. Vestibulum malesuada feugiat quam, vel dapibus nisl dictum in. Nullam sollicitudin tincidunt justo, venenatis semper nisi molestie at. Suspendisse purus erat, ullamcorper non tortor id, pretium ornare diam. Maecenas varius, odio nec maximus aliquam, diam metus molestie sem, sed pulvinar odio libero non felis. Donec non hendrerit diam. Sed sed enim quis neque gravida feugiat vel nec sem. Sed efficitur lacus at elementum tincidunt. Ut id leo vulputate, tristique tortor sit amet, maximus ex. Maecenas molestie ac urna in rutrum.
+        </p>
+      </section>
+    </div>
+
+    <div class="raccoons">
+      <section id="raccoon">
+        <p class="title">
+          Raccoon
+        </p>
+        <p class="desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec aliquam odio. Nullam lobortis sit amet eros vel pretium. Vestibulum malesuada feugiat quam, vel dapibus nisl dictum in. Nullam sollicitudin tincidunt justo, venenatis semper nisi molestie at. Suspendisse purus erat, ullamcorper non tortor id, pretium ornare diam. Maecenas varius, odio nec maximus aliquam, diam metus molestie sem, sed pulvinar odio libero non felis. Donec non hendrerit diam. Sed sed enim quis neque gravida feugiat vel nec sem. Sed efficitur lacus at elementum tincidunt. Ut id leo vulputate, tristique tortor sit amet, maximus ex. Maecenas molestie ac urna in rutrum.
+        </p>
+      </section>
+    </div>
+
+    <div class="lynxs">
+      <section id="lynx">
+        <p class="title">
+          Lynx
+        </p>
+        <p class="desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec aliquam odio. Nullam lobortis sit amet eros vel pretium. Vestibulum malesuada feugiat quam, vel dapibus nisl dictum in. Nullam sollicitudin tincidunt justo, venenatis semper nisi molestie at. Suspendisse purus erat, ullamcorper non tortor id, pretium ornare diam. Maecenas varius, odio nec maximus aliquam, diam metus molestie sem, sed pulvinar odio libero non felis. Donec non hendrerit diam. Sed sed enim quis neque gravida feugiat vel nec sem. Sed efficitur lacus at elementum tincidunt. Ut id leo vulputate, tristique tortor sit amet, maximus ex. Maecenas molestie ac urna in rutrum.
+        </p>
+      </section>
+    </div>
   </div>
 
-  <div class="mooses">
-    <section id="moose">
-      <p class="title">
-        Moose
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec aliquam odio. Nullam lobortis sit amet eros vel pretium. Vestibulum malesuada feugiat quam, vel dapibus nisl dictum in. Nullam sollicitudin tincidunt justo, venenatis semper nisi molestie at. Suspendisse purus erat, ullamcorper non tortor id, pretium ornare diam. Maecenas varius, odio nec maximus aliquam, diam metus molestie sem, sed pulvinar odio libero non felis. Donec non hendrerit diam. Sed sed enim quis neque gravida feugiat vel nec sem. Sed efficitur lacus at elementum tincidunt. Ut id leo vulputate, tristique tortor sit amet, maximus ex. Maecenas molestie ac urna in rutrum.
-      </p>
+  <div id="plants-content" class='hidden'>
+    <div class="ourplants">
+    <section id="menu">
+        <p class="title">
+          Our plants:
+        </p>
+        <div>
+        <a href="#trillium" class="intLink">Nodding Trillium</a>
+        <a href="#bearberry" class="intLink">Red Bearberry</a>
+        <a href="#maple-tree" class="intLink">Maple Tree</a>
+        <a href="#bog-labrador" class="intLink">Bog Labrador Tea</a>
+        <a href="#red-cedar" class="intLink">Western Red Cedar</a>
+        <a href="#lodgepole" class='intLink'>Lodgepole Pine</a>
+        <a></a>
+        </div>
     </section>
+    </div>
+    <div class="trillium">
+      <section id="trill">
+        <p class="title">
+          Nodding Trillium
+        </p>
+        <p class="desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec aliquam odio. Nullam lobortis sit amet eros vel pretium. Vestibulum malesuada feugiat quam, vel dapibus nisl dictum in. Nullam sollicitudin tincidunt justo, venenatis semper nisi molestie at. Suspendisse purus erat, ullamcorper non tortor id, pretium ornare diam. Maecenas varius, odio nec maximus aliquam, diam metus molestie sem, sed pulvinar odio libero non felis. Donec non hendrerit diam. Sed sed enim quis neque gravida feugiat vel nec sem. Sed efficitur lacus at elementum tincidunt. Ut id leo vulputate, tristique tortor sit amet, maximus ex. Maecenas molestie ac urna in rutrum.
+        </p>
+      </section>
+    </div>
+
+    <div class="bearberry">
+      <section id="bear">
+        <p class="title">
+          Red Bearberry
+        </p>
+        <p class="desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec aliquam odio. Nullam lobortis sit amet eros vel pretium. Vestibulum malesuada feugiat quam, vel dapibus nisl dictum in. Nullam sollicitudin tincidunt justo, venenatis semper nisi molestie at. Suspendisse purus erat, ullamcorper non tortor id, pretium ornare diam. Maecenas varius, odio nec maximus aliquam, diam metus molestie sem, sed pulvinar odio libero non felis. Donec non hendrerit diam. Sed sed enim quis neque gravida feugiat vel nec sem. Sed efficitur lacus at elementum tincidunt. Ut id leo vulputate, tristique tortor sit amet, maximus ex. Maecenas molestie ac urna in rutrum.
+        </p>
+      </section>
+    </div>
+
+    <div class="maple-tree">
+      <section id="maple">
+        <p class="title">
+          Maple
+        </p>
+        <p class="desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec aliquam odio. Nullam lobortis sit amet eros vel pretium. Vestibulum malesuada feugiat quam, vel dapibus nisl dictum in. Nullam sollicitudin tincidunt justo, venenatis semper nisi molestie at. Suspendisse purus erat, ullamcorper non tortor id, pretium ornare diam. Maecenas varius, odio nec maximus aliquam, diam metus molestie sem, sed pulvinar odio libero non felis. Donec non hendrerit diam. Sed sed enim quis neque gravida feugiat vel nec sem. Sed efficitur lacus at elementum tincidunt. Ut id leo vulputate, tristique tortor sit amet, maximus ex. Maecenas molestie ac urna in rutrum.
+        </p>
+      </section>
+    </div>
+
+    <div class="bog-labrador">
+      <section id="bog">
+        <p class="title">
+          Bog Labrador Tea
+        </p>
+        <p class="desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec aliquam odio. Nullam lobortis sit amet eros vel pretium. Vestibulum malesuada feugiat quam, vel dapibus nisl dictum in. Nullam sollicitudin tincidunt justo, venenatis semper nisi molestie at. Suspendisse purus erat, ullamcorper non tortor id, pretium ornare diam. Maecenas varius, odio nec maximus aliquam, diam metus molestie sem, sed pulvinar odio libero non felis. Donec non hendrerit diam. Sed sed enim quis neque gravida feugiat vel nec sem. Sed efficitur lacus at elementum tincidunt. Ut id leo vulputate, tristique tortor sit amet, maximus ex. Maecenas molestie ac urna in rutrum.
+        </p>
+      </section>
+    </div>
+
+    <div class="red-cedar">
+      <section id="cedar">
+        <p class="title">
+          Western Red Cedar
+        </p>
+        <p class="desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec aliquam odio. Nullam lobortis sit amet eros vel pretium. Vestibulum malesuada feugiat quam, vel dapibus nisl dictum in. Nullam sollicitudin tincidunt justo, venenatis semper nisi molestie at. Suspendisse purus erat, ullamcorper non tortor id, pretium ornare diam. Maecenas varius, odio nec maximus aliquam, diam metus molestie sem, sed pulvinar odio libero non felis. Donec non hendrerit diam. Sed sed enim quis neque gravida feugiat vel nec sem. Sed efficitur lacus at elementum tincidunt. Ut id leo vulputate, tristique tortor sit amet, maximus ex. Maecenas molestie ac urna in rutrum.
+        </p>
+      </section>
+    </div>
+
+    <div class="lodgepole">
+      <section id="pine">
+        <p class="title">
+          Lodgepole Pine
+        </p>
+        <p class="desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec aliquam odio. Nullam lobortis sit amet eros vel pretium. Vestibulum malesuada feugiat quam, vel dapibus nisl dictum in. Nullam sollicitudin tincidunt justo, venenatis semper nisi molestie at. Suspendisse purus erat, ullamcorper non tortor id, pretium ornare diam. Maecenas varius, odio nec maximus aliquam, diam metus molestie sem, sed pulvinar odio libero non felis. Donec non hendrerit diam. Sed sed enim quis neque gravida feugiat vel nec sem. Sed efficitur lacus at elementum tincidunt. Ut id leo vulputate, tristique tortor sit amet, maximus ex. Maecenas molestie ac urna in rutrum.
+        </p>
+      </section>
+    </div>
   </div>
 
-  <div class="otters">
-    <section id="otter">
-      <p class="title">
-        Otter
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec aliquam odio. Nullam lobortis sit amet eros vel pretium. Vestibulum malesuada feugiat quam, vel dapibus nisl dictum in. Nullam sollicitudin tincidunt justo, venenatis semper nisi molestie at. Suspendisse purus erat, ullamcorper non tortor id, pretium ornare diam. Maecenas varius, odio nec maximus aliquam, diam metus molestie sem, sed pulvinar odio libero non felis. Donec non hendrerit diam. Sed sed enim quis neque gravida feugiat vel nec sem. Sed efficitur lacus at elementum tincidunt. Ut id leo vulputate, tristique tortor sit amet, maximus ex. Maecenas molestie ac urna in rutrum.
-      </p>
-    </section>
-  </div>
 
-  <div class="beavers">
-    <section id="beaver">
-      <p class="title">
-        Beaver
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec aliquam odio. Nullam lobortis sit amet eros vel pretium. Vestibulum malesuada feugiat quam, vel dapibus nisl dictum in. Nullam sollicitudin tincidunt justo, venenatis semper nisi molestie at. Suspendisse purus erat, ullamcorper non tortor id, pretium ornare diam. Maecenas varius, odio nec maximus aliquam, diam metus molestie sem, sed pulvinar odio libero non felis. Donec non hendrerit diam. Sed sed enim quis neque gravida feugiat vel nec sem. Sed efficitur lacus at elementum tincidunt. Ut id leo vulputate, tristique tortor sit amet, maximus ex. Maecenas molestie ac urna in rutrum.
-      </p>
-    </section>
-  </div>
 
-  <div class="raccoons">
-    <section id="raccoon">
-      <p class="title">
-        Raccoon
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec aliquam odio. Nullam lobortis sit amet eros vel pretium. Vestibulum malesuada feugiat quam, vel dapibus nisl dictum in. Nullam sollicitudin tincidunt justo, venenatis semper nisi molestie at. Suspendisse purus erat, ullamcorper non tortor id, pretium ornare diam. Maecenas varius, odio nec maximus aliquam, diam metus molestie sem, sed pulvinar odio libero non felis. Donec non hendrerit diam. Sed sed enim quis neque gravida feugiat vel nec sem. Sed efficitur lacus at elementum tincidunt. Ut id leo vulputate, tristique tortor sit amet, maximus ex. Maecenas molestie ac urna in rutrum.
-      </p>
-    </section>
-  </div>
 
-  <div class="lynxs">
-    <section id="lynx">
-      <p class="title">
-        Lynx
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec aliquam odio. Nullam lobortis sit amet eros vel pretium. Vestibulum malesuada feugiat quam, vel dapibus nisl dictum in. Nullam sollicitudin tincidunt justo, venenatis semper nisi molestie at. Suspendisse purus erat, ullamcorper non tortor id, pretium ornare diam. Maecenas varius, odio nec maximus aliquam, diam metus molestie sem, sed pulvinar odio libero non felis. Donec non hendrerit diam. Sed sed enim quis neque gravida feugiat vel nec sem. Sed efficitur lacus at elementum tincidunt. Ut id leo vulputate, tristique tortor sit amet, maximus ex. Maecenas molestie ac urna in rutrum.
-      </p>
-    </section>
-  </div>
+<script src="js/app.js"></script>
 </body>
 </html>

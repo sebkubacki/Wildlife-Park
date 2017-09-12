@@ -1,26 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 15px;
   outline: 0;
 }
 
 
-@mixin animal($url, $url-min) {
+@mixin animal($url, $position) {
   background-image: url($url);
   background-position: center;
   background-size: cover;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: row;
+  @if $position == 'right' {
+    flex-direction: row-reverse;
+  }
+  @else if $position == 'left'{
+    flex-direction: row;
+  }
   p.title{
     margin: 0 20vw;
     text-align: center;
+    line-height: 3rem;
   }
   p{
     margin: 0 10vw;
@@ -41,7 +48,7 @@
 
 section{
   height: 90vh;
-  width: 100vw;
+  width: 100%;
   color: white;
   display: flex;
   flex-direction: column;
@@ -53,7 +60,7 @@ section{
   box-sizing: border-box;
 	height: 50px;
 	z-index: 1000;
-	width: 100vw;
+	width: 100%;
 	background: black;
   opacity: 0.7;
   position: fixed;
@@ -64,13 +71,14 @@ section{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding-right: 20px;
   }
 }
 
 a{
   font-size: 1.5rem;
   text-decoration: none;
-  color: white;
+  color: lightgray;
   margin: 10px;
 }
 
@@ -97,15 +105,25 @@ p{
   }
 }
 
+.desc{
+  background-color: rgba(91, 91, 91, 0.5);
+  padding: 5px;
+  box-shadow: 0 0 5px 5px rgba(91, 91, 91, 0.5)
+}
+
+a.desc{
+  padding: 2px;
+}
+
 #main{
   background-image: url('../images/forest.jpeg');
   background-position: center;
   background-size: cover;
-  @media(max-width: 800px){
-    background-size: auto;
-  }
+  height: 95vh;
+  text-align: center;
   p.title{
     margin: 0 20vw 70px 20vw;
+    line-height: 1.5rem;
     @media(max-width: 1200px){
       margin: 0 10px 70px 10px;
     }
@@ -124,8 +142,7 @@ p{
     }
   }
 }
-
-#animals{
+#menu{
   background-image: url('../images/mountains.jpg');
   background-position: center;
   background-size: cover;
@@ -133,11 +150,13 @@ p{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  @media(max-width: 800px){
-    background-size: auto;
-  }
+  height: 90vh;
+
   .title{
     margin: 0 20vw 70px 20vw;
+    @media(max-width: 750px){
+      font-size: 2rem;
+    }
   }
   div{
     display: flex;
@@ -149,30 +168,56 @@ p{
   }
 }
 
+
+
 #wolf{
-  @include animal('../images/wolf.jpeg', '../images/wolf-min.jpeg');
+  @include animal('../images/wolf.jpeg', 'left');
 }
 
 #moose{
-  @include animal('../images/moose.jpeg', '../images/moose-min.jpeg');
+  @include animal('../images/moose.jpeg', 'left');
 }
 
 #otter{
-  @include animal('../images/otter.jpeg', '../images/otter-min.jpeg');
+  @include animal('../images/otter.jpeg', 'right');
 }
 
 #beaver{
-  @include animal('../images/beaver.jpg', '../images/beaver-min.jpg');
+  @include animal('../images/beaver.jpg', 'left');
 }
 
 #raccoon{
-  @include animal('../images/raccoon.jpeg', '../images/raccoon-min.jpeg');
+  @include animal('../images/raccoon.jpeg', 'left');
 }
 
 #lynx{
-  @include animal('../images/lynx.jpeg', '../images/lynx-min.jpeg');
+  @include animal('../images/lynx.jpeg', 'left');
 }
 
-div{
-  width: 100vw;
+#trill{
+  @include animal('../images/nodding.jpg', 'left');
+}
+
+#bear{
+  @include animal('../images/bearberry.jpg', 'left');
+}
+
+#maple{
+  @include animal('../images/maple.jpeg', 'left');
+}
+
+#bog{
+  @include animal('../images/bog.jpg', 'right');
+}
+
+#cedar{
+  @include animal('../images/cedar.jpg', 'left');
+}
+
+#pine{
+  @include animal('../images/pine.png', 'right');
+}
+
+.hidden{
+  display: none;
 }
